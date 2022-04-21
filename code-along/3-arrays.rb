@@ -3,10 +3,32 @@
 # ruby 3-arrays.rb
 
 # Arrays are lists of things
+favorite_foods = ["tacos", "pizza", "ice cream"]
+puts favorite_foods.inspect     # adding .inspect makes the output show exactly how it was typed in the code
+
+we_have_to_go_back = [4, 8, 15, 16, 23, 42]
+puts we_have_to_go_back.inspect
+
+mixed_array = ["tacos", 3, true]
+puts mixed_array.inspect
+
+shopping_lists = [["diapers", "wipes", "bath toys"], ["coffee", "beer"]]
+puts shopping_lists.inspect
+puts shopping_lists.length
 
 # Accessing the array
+puts favorite_foods[0]      # the first position in an array is 0 not 1!!!
+puts favorite_foods[1]
+puts favorite_foods[2]
+puts favorite_foods[3].inspect      # the computer designates this as nil or a nothing value
+puts favorite_foods[-1]     # literally goes back to the value in reverse order
+
+puts shopping_lists[1][0]       # goes to the 2nd element in the array, and then the 1st element in the subarray
 
 # Add to the array
+favorite_foods.push("more tacos")
+puts favorite_foods.inspect
+
 
 # There are lots of fun things you can do with arrays:
 # https://ruby-doc.org/core-2.7.0/Array.html

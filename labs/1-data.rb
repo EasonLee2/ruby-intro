@@ -15,3 +15,10 @@
 # rand(1..6)
 # Log output to the screen with puts:
 # puts "Hello, world"
+
+roll1 = rand(1..6)
+puts "The result of 1st roll is: #{roll1}"
+roll2 = rand(1..6)
+puts "The result of 2nd roll is: #{roll2}"
+total = roll1 + roll2
+puts "The result of both rolls summed is: #{total}"
